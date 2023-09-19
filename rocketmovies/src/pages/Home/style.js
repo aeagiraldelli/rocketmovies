@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100%;
 
   display: grid;
-  grid-template-columns: 128px auto 128px;
+  grid-template-columns: auto 1200px auto;
   grid-template-rows: 116px auto;
   grid-template-areas:
     '. search .'

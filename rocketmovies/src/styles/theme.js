@@ -12,5 +12,6 @@ export const theme = {
 
     RED: '#FF002E',
     BROWN: '#ff859b0d',
+    BLACK: '#0D0C0F',
   },
 };

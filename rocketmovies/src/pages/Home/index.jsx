@@ -1,9 +1,11 @@
 import { HiPlus } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
+import { MovieListItem } from '../../components/MovieListItem';
 
 import { Container } from './style';
-import { MovieListItem } from '../../components/MovieListItem';
 
 export function Home() {
   return (
@@ -14,7 +16,9 @@ export function Home() {
       <header>
         <h2>Meus Filmes</h2>
         <div className="btn-add">
-          <Button icon={HiPlus} title="Adicionar filme" />
+          <Link to="/newmovie">
+            <Button icon={HiPlus} title="Adicionar filme" />
+          </Link>
         </div>
       </header>
       <main>
