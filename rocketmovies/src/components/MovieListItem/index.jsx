@@ -20,17 +20,17 @@ export function MovieListItem({
 
   let rateElements = [];
   for (let i = 0; i < rating; i++) {
-    rateElements.push(<HiStar key={Math.random() + i} />);
+    rateElements.push(<HiStar key={Date.now()} />);
   }
 
   if (rateElements.length < 5) {
     for (let i = rateElements.length; i < 5; i++) {
-      rateElements.push(<HiOutlineStar key={Math.random() + i} />);
+      rateElements.push(<HiOutlineStar key={Date.now()} />);
     }
   }
 
   const tagElements = tags.map((tag) => {
-    return <Tag name={tag} key={Math.round(Math.random() * 50)} />;
+    return <Tag name={tag} key={Date.now()} />;
   });
 
   return (

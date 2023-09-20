@@ -13,7 +13,7 @@ export const Header = styled.div`
   align-items: center;
 
   .back-icon {
-    color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    color: ${({ theme }) => theme.COLORS.ACCENT};
     font-size: 16px;
     display: flex;
     align-items: center;

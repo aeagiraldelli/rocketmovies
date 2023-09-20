@@ -5,9 +5,10 @@ export const Container = styled.div`
   padding: 32px;
   margin-top: 36px;
 
-  /* background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800}; */
-  background: rgba(255, 133, 155, 0.05);
+  background-color: ${({ theme }) => theme.COLORS.BROWN};
   border-radius: 10px;
+  cursor: pointer;
+
   h3 {
     font-size: 2.4rem;
     margin-bottom: 8px;
