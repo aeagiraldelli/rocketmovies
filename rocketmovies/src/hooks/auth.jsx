@@ -4,6 +4,7 @@ import { api } from '../services/api';
 
 const LOCAL_USER_KEY = '@rocketmovies:user';
 const LOCAL_TOKEN_KEY = '@rocketmovies:token';
+
 const AuthContext = createContext({});
 
 export function AuthProvider({ children }) {
@@ -80,7 +81,7 @@ export function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{ user: data.user, updateProfile, login, logout }}>
+      value={{ updateProfile, login, logout, user: data.user }}>
       {children}
     </AuthContext.Provider>
   );
